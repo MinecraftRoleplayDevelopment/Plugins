@@ -1,0 +1,57 @@
+main: me.josvth.trade.Trade
+name: ${project.name}
+version: ${project.version}
+author: Josvth
+softdepend: [Vault]
+commands:
+  trade:
+    aliases: [tr]
+    default: op
+permissions:
+  trade.*:
+    description: Grants permission to all features.
+    default: op
+    children:
+      trade.reload: true
+      trade.configure: true
+      trade.request.*: true
+      trade.allow.*: true
+  trade.reload:
+    description: Grants permission to reload Trade.
+    default: op
+  trade.configure:
+    description: Grants permission to configure Trade.
+    default: op
+  trade.allow.*:
+    description: Grants permission to all default restrictions.
+    default: op
+    children:
+      trade.allow.cross-game-mode: true
+      trade.allow.cross-world: true
+  # trade.use:
+    # description: Grants permission to use player features of Trade
+    # default: true
+    # children:
+      # trade.request.*: true
+  trade.request.*:
+    description: Grants permission to all requesting features.
+    default: true
+    children:
+      trade.request.command: true
+      trade.request.right-click: true
+      trade.request.shift-right-click: true
+      trade.request.left-click: true
+      trade.request.shift-left-click: true
+      trade.request.ignore: true
+  trade.request.command:
+    description: Grants permission to request by command.
+  trade.request.right-click:
+    description: Grants permission to request by right clicking.
+  trade.request.shift-right-click:
+    description: Grants permission to request by shift right clicking.
+  trade.request.left-click:
+    description: Grants permission to request by left clicking.
+  trade.request.shift-left-click:
+    description: Grants permission to request by shift left clicking.
+  trade.request.ignore:
+    description: Grants permission to ignore all incomming requests

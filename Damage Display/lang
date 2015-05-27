@@ -1,0 +1,26 @@
+Invalid config file!
+This plugin will be disabled!
+%
+==================================================
+Invalid config file! DamageSource '%' is not valid!
+Invalid config file! Entry 'damage' is not a string, nor a list, nor a ConfigurationSection!
+config.yml
+/defaultconfig.yml
+Couldn't create config file! IOException occurred:
+damage
+Invalid config file! Missing entry 'damage' in config file!
+No plugin for holograms installed and enabled!
+*** No plugin for holograms installed and enabled. ***
+*** This plugin will be disabled. ***
+Invalid config file! Invalid recipient in 'visibleTo' section: '%'.
+Invalid config file! Missing entry 'healing' in config file!
+Invalid config file! Entry 'healing' is not a string, nor a list, nor a ConfigurationSection!
+&c============= [ U P D A T E ] =============
+&c= CombatIndicator is not up-to-date!      =
+&c= Please download the newest version from =
+&c=                                         =
+&c= http://www.spigotmc.org/resources/5834/ =
+&c=                                         =
+&c===========================================
+Checking for updates...
+&cYou have update-checking disabled in the config! You should set 'check-updates' to true in the config.yml to be notified on new versions.

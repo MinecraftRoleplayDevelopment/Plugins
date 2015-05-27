@@ -1,0 +1,54 @@
+# Player Attributes Configuration
+# Strength = melee damage
+# Dexterity = ranged damage
+attributes:
+  health:
+    format: 'Health %value%'
+    # max health = 60 = 30 hearts
+    base: 0.0
+    max: 60.0
+    percentage: false
+  armour:
+    format: 'Armour %value%'
+    base: 0.0
+    max: 100.0
+    percentage: false
+  regeneration:
+  # change regeneration to ticks per regen, not amount per regen
+    format: 'Regeneration %value%'
+    base: 0.0
+    max: 100.0
+    percentage: false
+  strength:
+    format: 'Strength %value%'
+    base: 0.0
+    max: 100.0
+    percentage: false
+  dexterity:
+    format: 'Dexterity %value%'
+    base: 0.0
+    max: 100.0
+    percentage: false
+    #renamed to armour
+  level:
+    format: 'Level %value%'
+    base: 0.0
+    max: -1.0
+    percentage: false
+    
+    
+    
+    
+    
+    
+--------- REMOVE BELOW FROM CODE
+    enabled: false
+
+  enable-plugin-compatibility: true, should always be compatible
+  
+  
+  
+  item-only-damage-system:
+    enabled: false
+    base-damage: 0.0
+  seconds-between-health-updates: 60, should be hard coded to 60, reduces lag

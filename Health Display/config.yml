@@ -1,0 +1,76 @@
+# Health Bar Configuration
+# -------- KEEP BELOW, IN NEW FORMAT ---------
+scorebaord-compatability: true
+player:
+  use-proportion: true
+  proportional-to: 100
+  name:
+    percentage:
+      above: 20
+        prefix: '&a&l'
+        suffix: ''
+      below: 20
+        prefix: '&c&l'
+        suffix: ''
+      # renamed to display from below-name
+  health:
+    display: '&f&l{value} &a❤'
+    below-name: true
+other:
+  use-proportion: true
+  proportional-to: 100
+  name:
+    percentage:
+      above: 20
+        prefix: '&a&l'
+        suffix: ''
+      below: 20
+        prefix: '&c&l'
+        suffix: ''
+      # renamed to display from below-name
+  health:
+    display: '&f&l{value} &a❤'
+    below-name: true
+# -------- KEEP ABOVE ---------
+  
+  
+  
+  
+  
+  
+# -------- Find below in the code, and remove it ---------
+---------- REMOVE BELOW FROM CODE
+---------- Can also remove other .yaml files, place all in here
+
+
+  world-disabling: false
+  disabled-worlds: []
+
+    enable: true
+
+  enable: true
+    always-shown: true
+    text-mode: true
+    display-style: 0
+    hide-delay-seconds: 0
+    use-custom-file: true
+
+  display-style: 0
+  always-shown: true
+  text-mode: true
+  custom-text-enable: true
+  
+  hide-delay-seconds: 0
+  show-only-if-looking: false
+  use-custom-file: false
+  world-disabling: false
+  type-disabling: false
+  disabled-worlds: []
+  disabled-types: []
+  
+hooks:
+  epicboss: false
+fix-tab-names: false
+fix-death-messages: false
+update-notification: false
+use-player-bar-permissions: false

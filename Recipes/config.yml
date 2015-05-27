@@ -1,0 +1,53 @@
+  #either blacklisted, whitelisted or none
+  disable-type: none
+    blacklisted-items: ''
+    whitelisted-items: ''
+# You can get all minecraft IDs on this page: http://www.minecraftinfo.com/IDList.htm
+# You can get all enchants IDs on this page: http://fr.minecraftwiki.net/wiki/Enchantement
+#      enchantments:
+#      - "0:4"
+#      - "7:3"
+#      metadata: "r:198;g:175;b:96;"     
+# You can get RGB code here: http://www.code-couleur.com
+defaults:
+  shapelessRecipe: true
+  usePermission: false
+  deleteOthers: false
+  override: false
+  transferDurability: false
+crafting:
+  Map:
+    itemID: 395
+    metadata: 0
+    quantity: 1
+    customName: "&fAncient Map"
+    lores:
+    - "&7You can craft a new map"
+    - "&7using any generated one."
+    ingredientsID:
+      1: "358"
+# need to fix furnace smelting
+furnace:
+    Ebony_Longsword_1:
+      resultID: 268
+      result_ingredient_MetaData: 0
+      result_customName: "&e&lEbony Longsword"
+      result_lores:
+      - "&9&lFreeze Chance 5%"
+      - "&9&lFreeze Length 1"
+      - "&9&lStrength 6"
+      - "&9&lLevel 1"
+      ingredientID: 268
+      ingredient_MetaData: 0
+
+
+------------ remove from code
+enableUpdateChecking: false
+enableUpdateDownloading: false
+debug: false
+
+At the moment it won't let us place unusual items as ingredients into a furnace or brewing stand,
+could you allow all items to be ingredients? In other words, with vanilla Minecraft it won't let a player place
+an enchanted book into a brewing stand or furnace ingredients slots. I'm sure there's a easy fix around this.
+
+Also the ingredient_MetaData doesn't actually work, a Wooden Sword won't burn with COAL:100. It will only burn with normal COAL.

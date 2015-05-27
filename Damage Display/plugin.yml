@@ -1,0 +1,7 @@
+name: CombatIndicator
+version: 2.0.6
+main: me.coder.combatindicator.Main
+softdepend: [HolographicDisplays, HoloAPI]
+commands:
+  combatindicator:
+    permission: combatindicator.reload

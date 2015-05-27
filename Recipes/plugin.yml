@@ -1,0 +1,8 @@
+name: UnlimitedRecipes
+main: fr.tomcraft.unlimitedrecipes.URPlugin
+author: Xx_tomcraft_xX
+version: 2.3
+depend: []
+commands:
+    ur:
+        description: Reload recipes

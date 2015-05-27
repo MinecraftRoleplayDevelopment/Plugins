@@ -1,0 +1,11 @@
+# |-----------------------|
+# | Stamina Configuration |
+# |-----------------------|
+# | Tick value of food regeneration (20 / 1 second).
+Saturation-interval: 10
+# | Food added for every tick (2 = 1 full icon).
+Saturation-value: 1
+# | Tick value of food subtraction (20 / 1 second).
+Hunger-interval: 20
+# | Food subtracted for every tick (2 = 1 full icon).
+Hunger-value: 1

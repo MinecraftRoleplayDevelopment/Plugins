@@ -1,0 +1,80 @@
+﻿# Weight Configuration
+# 
+# How weight works:
+#  - A "normal" Minecraft player weighs 100
+#  - Less weight (e.g. 80) means lighter (= faster)
+#  - More weight (e.g. 120) means heavier (= slower)
+#  - Player weight = normal weight + armor weight
+# 
+#  - A "normal" Minecraft horse weighs 500
+#  - Horse weight = normal weight + rider (player) weight + armor weight
+config:
+#renamed to enabled from armor
+  enabled:
+    player: true
+    horse: true
+    #+2 spaces
+    horseRider: true
+    enchantment: false
+    #renamed to player from armor
+player:
+  weight:
+    base: 80
+    leather: 0
+    gold: 10
+    chainmail: 20
+    iron: 30
+    diamond: 40
+    # renamed to percentage
+  percentage:
+    helmet: 20
+    chestplate: 40
+    leggings: 30
+    boots: 10
+horse:
+  weight:
+    base: 600
+    gold: 0
+    iron: 20
+    diamond: 40
+    # remove enchantment names, only use general for now
+enchantment:
+  enabled: false
+    weight: -1
+    
+    
+    
+    
+    
+    
+    
+    
+#---- REMOVE below from code
+    
+    
+weightEnabled:
+
+
+# moved to base player weight
+playerWeight: 80
+horseWeight: 600
+    
+effectEnabled:
+  speed:
+    player: true
+    playerCreative: false
+    horse: true
+chat:
+  language: enUS
+  version: 0.3.5
+ #remove enabled worlds
+ enabledWorlds:
+ - "*"
+ #remove weight warning
+ weightWarning:
+  enabled: false
+  cooldown: 60
+  # remove auto update
+  autoUpdate: false
+  # remove metrics
+metricsEnabled: false

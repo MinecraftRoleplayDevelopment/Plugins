@@ -1,0 +1,63 @@
+# ==========================================
+# = CombatIndicator Configuration          =
+# ==========================================
+# Whether the plugin should automatically notify
+# you about new updates in the console
+# WE HIGHLY SUGGEST YOU LEAVE THIS ON TRUE!
+check-updates: false
+# The max radius of players seeing damage/health information
+radius-x: 16
+radius-y: 16
+radius-z: 16
+# Ticks until the hologram is removed
+ticks-till-remove: 20
+# How long to wait, until a new Hologram update is scheduled.
+# An update will move the hologram to the correct position and
+# removes it, if necessary
+# Decrease this value, if your holograms aren't smooth; increase
+# it to reduce server lagging
+update-ticks: 20
+# The y-Offset of the hologram
+yOffsetNormal: 0.5
+# The y-Offset of the hologram, if the entity has a shown name (e.g. a player)
+yOffsetName: 1
+# Whether to use the better holograms added in MC 1.8.3
+#
+# Better holograms will never block actions of players (right/left clicks)
+# (if you're server is older than 1.8.3 this setting is ignored)
+#
+# Warning if turned on: Players with minecraft version
+# * 1.8.0 will see holograms higher than usual
+# * 1.8.1 won't see holograms (only flickering)
+# * >= 1.8.2 will see the better holograms
+#
+# this is caused by a bug in the client
+#
+use-better-holograms: true
+# Section for indicating of damage
+# -------------------------------------------
+damage:
+  -
+    format: '&e&l%final_val%'
+    visibleTo: attacker
+    source: [player, entity]
+    finalDamageBiggerEq: 0.1
+  -
+    format: '&c&l%final_val%'
+    visibleTo: non-attacker
+    source: [player, entity]
+    finalDamageBiggerEq: 0.1
+  -
+    format: '&c&l%final_val%'
+    visibleTo: everyone
+    source: [environment]
+    finalDamageBiggerEq: 0.1
+# Section for indicating healing
+# BUG - Shows massive decimals on /heal, should only be 1 decimal max
+# -------------------------------------------
+healing:
+  -
+    format: '&a&l%final_val%'
+    visibleTo: everyone
+    source: [player, entity, environment]
+    finalDamageBiggerEq: 0.1

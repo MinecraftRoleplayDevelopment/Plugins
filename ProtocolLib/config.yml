@@ -1,0 +1,31 @@
+global:
+  # Automatically compile structure modifiers 
+  background compiler: true
+  
+  
+  
+  
+  # remove the config for Protobal Lib, hard code all.
+  
+  
+  
+  ------ REMOVE FROM CODE BELOW, might as well hard code this
+  
+  # Disable version checking for the given Minecraft version. Backup your world first!
+  ignore version check: 
+  # Override the starting injecting method
+  injection method: 
+  # Whether or not to enable the filter command
+  debug: false
+  # Whether or not to print a stack trace for every warning
+  detailed error: false
+  # The engine used by the filter command
+  script engine: JavaScript
+  suppressed reports:
+  metrics: false
+  # Settings for the automatic version updater
+  auto updater:
+    notify: false
+    download: false
+    # Number of seconds to wait until a new update is downloaded
+    delay: 86400

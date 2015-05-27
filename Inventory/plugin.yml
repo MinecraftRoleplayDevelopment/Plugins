@@ -1,0 +1,8 @@
+name: InventorySort
+version: 1.0.5
+author: Joe Crump
+main: joe.crump.isort.InventorySort
+
+commands:
+  isort:
+    description: Show Plugin Version Information

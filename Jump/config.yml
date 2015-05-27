@@ -1,0 +1,61 @@
+# Sounds and Effects should be formatted like so (# = number, *=decimal number):
+#   Effects:
+#      "NAME_CASE_SENSITIVE-*BLOCK_SPREAD-#COUNT-*SPEED,..."
+#      Example:
+#         "flame-1-30-1,lava-0.5-30-1,portal-1.5-60-1"
+#   Sounds:
+#      "NAME_CASE_SENSITIVE-*SPEED-*VOLUME"
+#      Example:
+#         "MAGMACUBE_JUMP-1-1,SHOOT_ARROW-1-1,ENDERDRAGON_WINGS-1.4-1"
+# -
+# List of sounds: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+#   See the list under "Public Attributes" and write them exactly the same as in the list
+# List of effects: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html
+#   iconcrack should be "iconcrack-BLOCK_ID"
+#   blockcrack should be "blockcrack-BLOCK_ID-DATA_VALUE"
+#   blockdust should be "blockdust-BLOCK_ID-DATA_VALUE"
+# -
+# FallMode is how the plugin should calculate and handle fall damage.
+# Fall damage that you get either in a disabled world, region or to players
+#    without jump permission is not handled by the plugin unless mode is set
+#    to NONE_GLOBAL.
+# You can use these values:
+#
+#   NONE_GLOBAL:
+#     Prevents all fall damage for all players.
+#   NONE:
+#     Prevents all fall damage for players that can jump
+#   VANILLA:
+#     All fall damage is calculated as in vanilla and no damage
+#     will be cancelled.
+#   RESET:
+#     The players fall distance is reset on jump. Fall damage is calculated more
+#     or less like so: fall_distance_in_blocks - 3.
+#     But with mode set to reset, then the fall distance is set to 0
+#     when the player jumps. This makes it possible for players
+#     to fall down great heights, then jump while in the air and calculate the
+#     fall distance from there.
+#    RESET_NONE:
+#     This works more or less like the reset mode, though when the player lands
+#     after a jump, then all damage is cancelled.
+JumpMultiplier: 0.5
+DirectionMultiplier: 0.05
+Ymultiplier: 0.5
+Ticks: 1
+FallMode: RESET
+Effects: "cloud-0.5-20-0.05,FIREWORKS_SPARK-0.5-10-0.05"
+Sounds: "FIREWORK_LARGE_BLAST-0.5-1.0"
+#renamed food to hunger
+Hunger:
+  Min: 1
+  Cost: 20
+RunActiveCheck: true
+# we need to find another way to enable double jump without permanent fly mode.
+
+
+------ REMOVE BELOW FROM CODE
+DisabledWorlds: ""
+OnlyDisabledWorlds: false
+DisableWGRegions: false
+WorldGuardRegions: ""
+CheckForUpdates: false
